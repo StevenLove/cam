@@ -1,5 +1,5 @@
 // const KURENTO_WEBSOCKET_URI = "wss://159.89.231.194:8433/kurento"
-const KURENTO_WEBSOCKET_URI = "wss://kurento.jsconsole.net:8443/kurento"
+const KURENTO_WEBSOCKET_URI = "wss://kurento.jsconsole.net:8433/kurento"
 
 const create = () => {
     /*
@@ -291,7 +291,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 window.notifyError = () => {
     document.querySelector("a").style="display:block;";
-    console.log("error",e);
 }
 
 function submitted(event) {
