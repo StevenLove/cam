@@ -1,5 +1,5 @@
-// const KURENTO_WEBSOCKET_URI = "wss://159.89.231.194:8433/kurento"
-const KURENTO_WEBSOCKET_URI = "wss://kurento.jsconsole.net:8433/kurento"
+const KURENTO_WEBSOCKET_URI = "wss://intracomsystems.net:8433/kurento"
+
 const create = () => {
     /*
     * (C) Copyright 2014 Kurento (http://kurento.org/)
