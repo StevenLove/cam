@@ -279,11 +279,19 @@ document.addEventListener("DOMContentLoaded", function(){
     // Handler when the DOM is fully loaded
     var form = document.querySelector("form");
     form.onsubmit = submitted.bind(form);
+
+    var urlParams = new URLSearchParams(window.location.search);
+    let pass = urlParams.get("pass");
+    if(pass){
+        document.getElementById("pass").value=pass;
+        submitted();
+    }
 });
 
 function submitted(event) {
-    event.preventDefault();
+    if(event)event.preventDefault();
     let pass = document.getElementById("pass").value;
     let uri = "rtsp://admin:"+pass+"@98.26.17.132:554"
     playURI(document.getElementById("vid"),uri)
+    document.querySelector("form").remove();
 }
